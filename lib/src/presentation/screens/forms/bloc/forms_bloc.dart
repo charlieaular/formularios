@@ -25,8 +25,6 @@ class FormBloc extends Bloc<FormEvent, FormScreenState> {
         yield* _mapNameChangedToState(event);
         break;
 
-
-
       case DescriptionChanged:
         yield* _mapDescriptionChangedToState(event);
         break;
@@ -61,7 +59,6 @@ class FormBloc extends Bloc<FormEvent, FormScreenState> {
     var error = '';
     if (event.data.isEmpty) {
       error = 'No puede ser vacio';
-
     }
     yield state.copyWith(
       description: event.data,
