@@ -1,0 +1,5 @@
+enum RequestType {
+  SENDING,
+  ERROR_HTTP,
+  CREATED_SUCCESS
+}
